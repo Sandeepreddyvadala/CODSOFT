@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    height: 100vh;
+    background: url('image.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    
+}
+.hero h1 {
+    margin-bottom: 1.5rem; /* Adds space below the main heading */
+}
+
+
+.hero h1 {
+    font-size: 3rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #f5eaf7; /* Highlight color (red) */
+    text-transform: uppercase; /* Converts text to uppercase */
+}
+.hero h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fdd835; /* Yellow background */
+    color: #000; /* Black text for contrast */
+    padding: 0.5rem 1rem; /* Adds space around the text */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    display: inline-block; /* Ensures the background fits the text */
+}
+
+.hero p {
+    margin-bottom: 1.5rem; /* Adds space below the paragraph */
+}
+
+.hero .cta-btn {
+    margin-top: 2rem; /* Adds more space above the button */
+}
+
+.cta-btn {
+    padding: 1rem 2rem; /* Adjust padding for button size */
+    margin-top: 1.5rem; /* Adds space above the button */
+    background-color: #f44336; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none ; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.feature {
+    margin: 2rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+.hero {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+#about {
+    margin-top: 0; /* Remove top margin */
+    padding-top: 2rem; /* Optional: Adjust padding as needed */
+}
+.hero {
+    height: auto; /* Allow the height to adjust based on content */
+    min-height: 100vh; /* Optional: Minimum height for larger screens */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensure sections stretch without extra space */
+}
+section {
+    padding: 2rem 1rem; /* Adjust as needed */
+    max-width: 1200px; /* Set a max width for large screens */
+    margin: 0 auto; /* Center align sections */
+    text-align: center; /* Center text within sections */
+}
+.container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+    flex-direction: column; /* Change to row if needed */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Example for three equal columns */
+    gap: 20px; /* Space between grid items */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width/height */
+}
+
+#contact {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Center aligns items */
+    padding: 2rem 1rem; /* Adds padding to the section */
+}
+
+#contact h2 {
+    margin-bottom: 1rem; /* Space between heading and content */
+}
+
+#contact .cta-btn {
+    margin-top: 1.5rem; /* Space between heading and button */
+}

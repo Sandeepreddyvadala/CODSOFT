@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.9); /* Semi-transparent header */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('your-header-image.jpg'); /* Add a header background image */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 10px rgb(95, 94, 94);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    color:#ddd;
+}
+
+header .social-links {
+    margin-top: 20px;
+}
+
+header .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header .social-links a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.project-item, .experience-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover, .experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3, .experience-item h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a.button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Adding a subtle background image to About Me section */
+#about {
+    background-image: url('your-background-image.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    color: #090909;
+    padding: 60px 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#about p, #about ul {
+    font-size: 1.2em;
+}
+.profile-picture {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border: 4px solid #fff; /* Optional: Adds a white border */
+    margin-bottom: 20px; /* Space below the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fade-in {
+    opacity: 0; /* Hidden by default */
+    transform: translateY(20px); /* Slightly shifted down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Moves back to original position */
+}
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top.visible {
+    display: block; /* Show when scrolled down */
+    opacity: 1;
+}
+/* General Section Styling */
+section {
+    padding: 80px 0; /* Space around the sections */
+    text-align: center; /* Center align all text */
+    background-color: #f5f5f5; /* Light background for sections */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding to prevent text from touching the edges */
+}
+
+h2 {
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+p {
+    font-size: 1.2em; /* Paragraph text size */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Styling for the Contact Section */
+#contact {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for dark background */
+}
+
+#contact p {
+    color: #ddd; /* Softer white for paragraph text */
+}
+
+#contact .button {
+    background-color: #ff5722; /* Button color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact .button:hover {
+    background-color: #e64a19; /* Darken button on hover */
+}
+
+#phone-number {
+    font-size: 1.5em;
+    color: #ff5722; /* Make phone number pop */
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0; /* Space inside the footer */
+    text-align: center; /* Center align text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em; /* Small footer text */
+}
+
+/* Spacing Between Sections */
+#about, #projects, #contact {
+    margin-bottom: 50px; /* Space between sections */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em; /* Smaller heading for smaller screens */
+    }
+
+    p {
+        font-size: 1.1em; /* Smaller text size for readability */
+    }
+
+    .container {
+        padding: 0 15px; /* Reduce padding on smaller screens */
+    }
+}
+/* Add margin below the paragraph in the contact section */
+#contact p {
+    margin-bottom: 20px; /* 20px space between paragraph and button */
+    color: #ddd; /* Softer white for paragraph text */
+}
+
+#contact .button {
+    background-color: #ff5722; /* Button color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Optional: additional space above button */
+}
+
+#contact .button:hover {
+    background-color: #e64a19; /* Darken button on hover */
+}
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light grey background for the entire page */
+    color: #333; /* General text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #9a8ab0, #9c87af); /* Gradient background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 100px 0; /* Spacing in header */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    color: white; /* White color for the header paragraph */
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff; /* Default background for sections */
+}
+
+/* Alternate Background Color for Sections */
+section:nth-child(even) {
+    background-color: #f0f0f0; /* Light grey for every second section */
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #b5a8c7; /* Accent color for section headings */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contact Section Background */
+#contact {
+    background-color: #ffffff; /* Darker color for contrast */
+    color: white;
+}
+
+#contact p {
+    color: #111010; /* Softer white for text */
+}
+
+#contact .button {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact .button:hover {
+    background-color: #e64a19; /* Darken button on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #a797bc; /* Dark footer */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Adjust header font size for small screens */
+    }
+
+    header p {
+        font-size: 1em; /* Adjust paragraph size for readability */
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+}

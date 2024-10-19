@@ -1,0 +1,57 @@
+<script>
+    // Smooth scrolling when clicking on a navigation link
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+<script>
+    document.getElementById('reveal-contact').addEventListener('click', function() {
+        var phoneNumber = document.getElementById('phone-number');
+        phoneNumber.style.display = 'block'; // Show the phone number
+        phoneNumber.style.opacity = '0'; // Initially hide the number (transparent)
+        setTimeout(function() {
+            phoneNumber.style.opacity = '1'; // Fade it in smoothly
+            phoneNumber.style.transition = 'opacity 0.5s'; // 0.5 seconds fade effect
+        }, 10);
+        this.style.display = 'none'; // Hide the button after click
+    });
+    </script>
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    
+    const appearOptions = {
+        threshold: 0.3 // When 30% of the element is visible, fade in
+    };
+    
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible'); // Add the 'visible' class to start fade-in
+                appearOnScroll.unobserve(entry.target); // Stop observing after the effect has triggered
+            }
+        });
+    }, appearOptions);
+    
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader); // Apply the observer to each fading element
+    });
+    </script>
+<script>
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) { // Show the button when scrolled down 300px
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+    </script>
+                
